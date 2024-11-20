@@ -20,8 +20,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer components {
+@layer components{
   .container {
-    @apply max-w-7xl mx-auto px-4;
+    @apply mx-auto max-w-7xl px-4;
+  }
+
+  .botao {
+    @apply flex justify-center items-center gap-2 rounded-md px-9 h-9 text-sm font-semibold
+  }
+
+  .botao.azul{
+    @apply bg-blue-500 text-white
+  }
+  .botao.azul:hover{
+    @apply bg-blue-600
+  }
+
+  .botao.vermelho{
+    @apply bg-red-500 text-white
+  }
+  .borao.vermelho:hover{
+    @apply bg-red-600
+  }
+  .botao.verde{
+    @apply bg-green-500 text-white
+  }
+  .borao.verde:hover{
+    @apply bg-green-600
   }
 }
+
+
+
